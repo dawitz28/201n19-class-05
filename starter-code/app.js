@@ -122,8 +122,18 @@ IMPORTANT DETAIL: You may not use the arithmetic operator * in this function. To
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiplyArray() function and see if the test passes.*/
 
 // Write your code here
-function multiplyArray(multArr) { //eslint-disable-line
-
+function multiplyArray(multArr){ //eslint-disable-line
+  var multiply1 = 1;
+  var theString = '';
+  for(var i = 0 ; i < multArr.length-1; i++){
+    theString1 += multArr[i]+',';
+  }
+  for(var i=0; i< multArr.length-1; i++){
+    theString1 += multArr[i]+',';
+  }
+  theString1 += multArr[multArr.length-1]
+  var theString2 = `The numbers ${theString1} have a product of ${multiply1}.`
+  return[multiply1,theString2];
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
